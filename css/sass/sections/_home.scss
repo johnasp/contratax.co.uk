@@ -1,3 +1,4 @@
+$sectionPad: 20px;
 .navbar-header {
 	float: none;
 }
@@ -41,4 +42,13 @@ label {
 }
 .phone-btn {
 	margin-right: 8px;
+}
+
+#enquire {
+	background: #eaeaea;
+	padding: $sectionPad 0;
+}
+footer {
+	background: #e1e1e1;
+	padding: $sectionPad 0;
 }
