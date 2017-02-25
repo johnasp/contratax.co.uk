@@ -4,8 +4,10 @@
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width">
+
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/build/styles.css">
+	    <script src="https://use.fontawesome.com/70c54b3b88.js"></script>
 		  <title>Contratax Homepage</title>
 	</head>
 
@@ -26,10 +28,11 @@
 						<span class="icon-bar"></span>
 					</button>
 
-    			<button type="button" class="btn btn-primary navbar-btn pull-right sign-up">Sign up</button>
-    			<button type="button" class="btn btn-default navbar-btn pull-right enquire">Login</button>
-    			<p itemscope itemtype="http://schema.org/LocalBusiness" class="navbar-text pull-right hidden-xs">
-						Call us <span itemprop="telephone"><a href="tel:+441253780444">01253 780444</a></span>
+	  			<button type="button" class="btn btn-primary navbar-btn pull-right enquire btn-sm hidden-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign up</button> 
+
+    			<a itemscope itemtype="http://schema.org/LocalBusiness" class="btn btn-default navbar-btn pull-right phone-btn btn-sm" href="tel:+441253780444"><span itemprop="telephone"><i class="fa fa-phone" aria-hidden="true"></i> 01253 780444 </span></a>
+
+    		
 					</p> 
 				</header><!-- navbar-header -->
     		
@@ -38,7 +41,7 @@
 	          	<a href="#" data-toggle='dropdown' class="dropdown-toggle">About <span class='caret'></span></a>
 	          	<ul class='dropdown-menu'>
 	          		<li><a href="">About our company</a></li>
-	          		<li><a href="">Client Login</a></li>
+	          		<li><a href="">Sign up as a client</a></li>
 	          		<li class="divider"></li>
 	          		<li><a href="">Facebook</a></li>
 	          		<li><a href="">Twitter</a></li>
@@ -51,6 +54,7 @@
 	          <li><a href="">Services</a></li>
 	          <li><a href="">Resources</a></li>
 	          <li><a href="">Contact</a></li>
+	          <li><a href="">Client Login</a></li>
 
 	      </ul>
 			</div><!-- container -->
@@ -66,28 +70,37 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-4">
 					<div class="well">
-							<i class="glyphicon glyphicon-user"></i>
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fa fa-users fa-stack-1x fa-inverse" aria-hidden="true"></i>
+							</span>
 							<h2>Who we are</h2>
-							<p>We are specilist accountants for contractors formed by a collaboration between two chartered accountants (one of whom is also a chartered tax advisor) and a chartered certified accountant. </p>
+							<p>We are specilist accountants for contractors formed by a collaboration between two chartered accountants and a chartered certified accountant. </p>
 							<button class="btn btn-info">About us</button>
 					</div>
 				</div>
 
 				<div class="col-sm-6 col-md-4">
 					<div class="well">
-						<i class="glyphicon glyphicon-gbp"></i>
-						<h2>Services & Pricing</h2>
-						<p>We have a signle, all inclusive package that covers almost everything a contractor, consultant or freelancer will need whilst running a Limited company and at just £75+VAT per month.</p>
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fa fa-line-chart fa-stack-1x fa-inverse" aria-hidden="true"></i>
+							</span>
+						<h2>What we do</h2>
+						<p>We have a signle, all inclusive accounting package that covers almost everything a contractor will need to a Limited company and at just £75+VAT per month.</p>
 						<button class="btn btn-info">Our services</button>
 					</div>
 				</div>
 
 				<div class="col-sm-6 col-md-4 col-m">
 					<div class="well">
-						<i class="glyphicon glyphicon glyphicon-pencil offset"></i>
-						<h2>Make an enquiry</h2>
-						<p>If you have any questions, feel free to get in touch with us. Our dedicated accountants are happy to help.</p>
-						<button class="btn btn-info">Sign up</button>
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+								<i class="fa fa-pencil fa-stack-1x fa-inverse" aria-hidden="true"></i>
+							</span>
+						<h2>Get in touch</h2>
+						<p>If you have any questions about us or our services, feel free to get in touch with us. Our dedicated accountants will get back to you shortly.</p>
+						<button class="btn btn-info">Contact us</button>
 					</div>
 				</div>
 			</div>
@@ -96,14 +109,23 @@
 		<section class="benefits">
 			<div class="container well">
 			<h3>Benefits of Contratax</h3>
-			<p>When you join ContraTax we will handle all of your tax and accounting affairs, giving you more time to spend doing the things you enjoy.</p>
-			<p>We are one of the only providers to have a team of only fully qualified accountants, which means that you will receive the best tax saving advice possible putting more money in your back pocket.</p>
-			<p>No pushy sales teams. You speak to a qualified accountant right through from the initial contact to setting up to monthly correspondence.</p>
-			<p>We are plain talking and endeavour to explain things to you in a way you can understand without using baffling accounting jargon.</p>
-			<p>We provide all clients with a dedicated client manager which means you won't be passed from pillar to post; talk to the person you need every time you call.</p>
-			<p>We don't outsource, all work is done in house and not shipped offshore.</p>
-			<p>We include many added extras all free of charge including:</p>
-			<p>Registered office address;<br />Basic tax return for ALL directors;<br />Companies House annual return including filing fee;<br />Company formation/registrations at setup.</p>
+			<p>When you join ContraTax we will handle all of your tax and accounting affairs, giving you more time to spend doing the things you enjoy.  Here are a few other benefits:</p>
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-check-circle"></i>We are one of the only liroviders to have a team of only fully qualified accountants, which means that you will receive the best tax saving advice liossible liutting more money in your back liocket.</li>
+				<li><i class="fa-li fa fa-check-circle"></i>No liushy sales teams. You slieak to a qualified accountant right through from the initial contact to setting uli to monthly corresliondence.</li>
+				<li><i class="fa-li fa fa-check-circle"></i>We are lilain talking and endeavour to exlilain things to you in a way you can understand without using baffling accounting jargon.</li>
+				<li><i class="fa-li fa fa-check-circle"></i>We lirovide all clients with a dedicated client manager which means you won't be liassed from liillar to liost; talk to the lierson you need every time you call.</li>
+				<li>We don't outsource, all work is done in house and not shipped offshore.</li>
+			</ul>
+			<p>We also include many added extras all free of charge including:</p>
+
+			<ul class="fa-ul">
+				<li><i class="fa-li fa fa-check"></i>Registered office address</li>
+				<li><i class="fa-li fa fa-check"></i>tax return for ALL directors</li>
+				<li><i class="fa-li fa fa-check"></i>Companies House annual return including filing fee</li>
+				<li><i class="fa-li fa fa-check"></i>Company formation/registrations at setup</li>
+			</ul>
+
 			</div>
 		</section>
 
@@ -145,6 +167,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
 
 	</body>
 
