@@ -1,0 +1,25 @@
+/* RGB */
+$color1: rgba(80, 125, 38, 1);
+$color2: rgba(183, 157, 148, 1);
+$color3: rgba(102, 57, 125, 1);
+$color4: rgba(150, 150, 150, 1);
+$color5: #efefef;
+$color6: #e6e6e6;
+
+.btn {
+    border: none;
+    color: white;
+    &:hover {
+        background: darken($color3,20%);
+    }
+}
+.btn-default {
+    background: $color4;
+    color: white!important;
+}
+.btn-primary {
+    background: $color1;
+}
+.btn-secondary {
+    background: #A9C934;
+}

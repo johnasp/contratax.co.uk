@@ -1,35 +1,39 @@
-$sectionPad: 20px;
-.navbar-header {
-	float: none;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
 }
-.enquire, .sign-up {
-	margin-right: 6px;
-}
-.logo {
-	display: inline-block;
-	width: 38%;
+section {
+    p, li {
+        font-size: 20px;
+    }
 }
 .jumbotron {
+    background-image: url(/img/bg.jpg);
+    margin-bottom: 0;
 	a {
 		margin-right: 12px;
 	}
-}
-#info-blocks {
+} 
+
+.info {
+    padding: $padSection 0;
+    background: $color5;
 	text-align: center;
 	h2 {
 		margin: 0;
 	}
-	p {
-		font-size: 16px;
-	}
 	.glyphicon {
 		font-size: 30px;
 	}
-
+    .well {
+        margin-bottom: 0;
+    }
 }
-
-body {
-	background: white;
+.benefits {
+       background: $color6; 
+}
+.enquiry-form {
+    background: $color5;
 }
 label {
 	width: 80px;
@@ -37,18 +41,4 @@ label {
 .fa-stack.fa-lg {
 	font-size: 1.8em;
 }
-.call-us {
-	font-size: 1.5em;
-}
-.phone-btn {
-	margin-right: 8px;
-}
 
-#enquire {
-	background: #eaeaea;
-	padding: $sectionPad 0;
-}
-footer {
-	background: #e1e1e1;
-	padding: $sectionPad 0;
-}

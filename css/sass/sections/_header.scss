@@ -1,0 +1,44 @@
+header.navbar {
+    padding-top: 6px;
+	background: $color3;
+    border-radius: 0;
+    margin-bottom: 0;
+    ul#main-nav {
+        padding: 12px 0 0 0;
+        a {
+            color: #F1E8F6;
+            font-size: 20px;
+            &:hover {
+                color: $color2;
+            }
+        }
+        li ul li a {
+            font-size: 18px;
+            color: #000;
+        }
+    }
+}
+.enquire, .sign-up {
+	margin-right: 6px;
+}
+.logo {
+	display: inline-block;
+	width: 38%;
+}
+.navbar-header {
+	float: none;
+}
+.call-us {
+	font-size: 1.5em;
+}
+.phone-btn {
+	margin-right: 8px;
+}
+
+#enquire {
+	background: #eaeaea;
+	padding: $sectionPad 0;
+}
+.navbar-toggle {
+    background: white;
+}
