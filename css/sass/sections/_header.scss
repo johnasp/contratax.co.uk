@@ -1,13 +1,22 @@
-header.navbar {
+.nav-top {
+    background: $color3;
+}
+.nav-bottom {
+    background: $color5;
+    margin-bottom: 0;
+}
+
+header {
     padding-top: 6px;
-	background: $color3;
+	background: #efefef;
     border-radius: 0;
     margin-bottom: 0;
-    ul#main-nav {
-        padding: 12px 0 0 0;
+    ul {
+        padding: 0;
+
         a {
-            color: #F1E8F6;
-            font-size: 20px;
+            color: #color3;
+            font-size: 22px;
             &:hover {
                 color: $color2;
             }
@@ -17,17 +26,27 @@ header.navbar {
             color: #000;
         }
     }
-}
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar.navbar-collapse {
+        text-align: center;
+    }
+    .dropdown-menu ul li {
+        text-align: left;
+    }
+} 
 .enquire, .sign-up {
 	margin-right: 6px;
 }
 .logo {
-	display: inline-block;
-	width: 38%;
+	display: block;
+	width: 24%;
+    margin: 0 auto;
 }
-.navbar-header {
-	float: none;
-}
+
+
 .call-us {
 	font-size: 1.5em;
 }
