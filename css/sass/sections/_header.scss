@@ -44,11 +44,14 @@ header {
 	display: block;
 	width: 24%;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .test li  {
-    border: 1px solid green;
-    width: 23%;
+    margin-right: 10px;
+    @include breakpoint(1024) { margin-right: 50px;}
+    @include breakpoint(1200) { margin-right: 90px;}
+    top: 3px;
 }
 .call-us {
 	font-size: 1.5em;
@@ -63,4 +66,12 @@ header {
 }
 .navbar-toggle {
     background: white;
+}
+.nav-top .container {
+    position: relative;
+}
+.buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

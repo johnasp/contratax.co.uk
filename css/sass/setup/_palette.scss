@@ -1,25 +1,36 @@
 /* RGB */
 $color1: rgba(80, 125, 38, 1);
 $color2: rgba(183, 157, 148, 1);
-$color3: rgba(102, 57, 125, 1);
+$color3: #66397d;
 $color4: rgba(150, 150, 150, 1);
 $color5: #efefef;
 $color6: #e6e6e6;
 
-.btn {
-    border: none;
-    color: white;
+@mixin button($col) {
+    background: $col;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px solid darken($col, 10%);
     &:hover {
-        background: darken($color3,20%);
+        background: darken($col,10%);
+        color: #fff;
     }
 }
+.btn-bd-off {
+    border: 0;
+    border: 1px solid $color1;
+}
 .btn-default {
-    background: $color2;
-    color: white!important;
+    @include button($color4);
 }
 .btn-primary {
-    background: $color3;
+    @include button($color1);
 }
 .btn-secondary {
-    background: #A9C934;
+    @include button($color2);
+}
+.btn-wire {
+    border: 1px solid #fff!important;
+    background: none;
+    color: #fff;
 }
