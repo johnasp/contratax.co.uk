@@ -3,6 +3,7 @@ body {
     background: white;
 }
 section {
+    padding: 60px 0;
     p, li {
         font-size: 20px;
     }
@@ -20,11 +21,29 @@ section {
 } 
 
 .info {
-    padding: $padSection 0;
     background: $color5;
 	text-align: center;
-	h2 {
-		margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    .box {
+        background: #fff;
+        border-radius: 6px;
+        padding: 12px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;;
+        @include breakpoint(768) {
+            width: 30%;
+            margin-bottom: 0;
+        }
+    }
+    h2 {
+    margin: 0;
 	}
 	.glyphicon {
 		font-size: 30px;
@@ -32,6 +51,7 @@ section {
     .well {
         margin-bottom: 0;
     }
+
 }
 .benefits {
        background: $color6; 

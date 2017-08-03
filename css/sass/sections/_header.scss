@@ -13,25 +13,35 @@ header {
     margin-bottom: 0;
     ul {
         padding: 0;
-
         a {
             color: #color3;
-            font-size: 22px;
+            font-size: 16px;
+            @include breakpoint(768) {
+                font-size: 22px;
+            }
             &:hover {
                 color: $color2;
             }
         }
         li ul li a {
-            font-size: 18px;
+            font-size: 14px;
             color: #000;
+            @include breakpoint(768) {
+                font-size: 18px;
+            }
         }
     }
     .navbar .navbar-nav {
-        display: inline-block;
         float: none;
+        @include breakpoint(768) {
+                    display: inline-block;
+        }
     }
     .navbar.navbar-collapse {
-        text-align: center;
+        text-align: left;
+        @include breakpoint(768) {
+            text-align: center;
+        }
     }
     .dropdown-menu ul li {
         text-align: left;
@@ -41,17 +51,25 @@ header {
 	margin-right: 6px;
 }
 .logo {
+    padding: 10px 0;
+    width: 26%;    
 	display: block;
-	width: 24%;
     margin: 0 auto;
-    padding: 20px 0;
+    @include breakpoint(768) {
+        width: 24%;
+        padding: 20px 0;
+    }
 }
 
-.test li  {
-    margin-right: 10px;
-    @include breakpoint(1024) { margin-right: 50px;}
-    @include breakpoint(1200) { margin-right: 90px;}
+.site-nav li  { 
     top: 3px;
+    @include breakpoint(768) {
+        margin-right: 16px;
+        display: inline-block;
+    }
+    @include breakpoint(1024) {
+        margin-right: 36px;
+    }
 }
 .call-us {
 	font-size: 1.5em;
@@ -74,4 +92,18 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+}
+.btn-bd-off {
+    border: 0;
+    border: 1px solid $color1;
+    &:hover {
+           border: 1px solid darken($color1,10%); 
+    }
+}
+.phone-btn:hover {
+    color: black;
+    background: white;
+}
+.icon-bar {
+    background: $color3;
 }

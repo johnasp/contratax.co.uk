@@ -2,4 +2,11 @@ footer {
 	background: #2C1F33;
 	padding: $sectionPad 0;
     color: $color5;
+    font-size: 16px;
+    .container {
+        padding: 30px 0;    
+    }
+    h4 {
+        font-size: 24px;
+    }
 }
